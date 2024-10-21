@@ -2,9 +2,7 @@ def parseMatrix(data: str) -> list:
     res = []
     for i in data.split("|"):
         line = []
-        for j in i.split(" "):
-            if j == '':
-                continue
+        for j in i.split():
             line.append(float(j))
         res.append(line)
     return res
